@@ -6,7 +6,7 @@ Test the express generator
 - node
 - yarn or npm
 
-## Created using
+## Initially created using
 ```
 express --veiw=pug test-express-generator
 ```
@@ -15,6 +15,11 @@ express --veiw=pug test-express-generator
 ```
 cd test-express-generator
 yarn install
+```
+
+## Build the app if changes have occurred and dist/ needs updating
+```
+yarn build
 ```
 
 ## Run the app
@@ -26,7 +31,6 @@ yarn start
 ```
 chromium http://localhost:3000
 ```
-
 And you'll see on the web page
 ```
 Express

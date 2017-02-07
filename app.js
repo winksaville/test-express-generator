@@ -1,8 +1,8 @@
 // Get the DbgLogger module
-var DbgLogger = require('./lib/javascript/DbgLogger.js');
+var DL = require('./dist/lib/DbgLogger');
 
 // Create a global debug logger
-dl = new DbgLogger('e');
+dl = new DL.DbgLogger('e');
 dl.log('d', '/bin/www+ via d.log d');
 dl.logd('/bin/www+ via d.logd');
 dl.log('e', '/bin/www+ via d.loge');
