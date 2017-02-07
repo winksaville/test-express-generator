@@ -1,3 +1,13 @@
+// Get the DbgLogger module
+var DbgLogger = require('./lib/javascript/DbgLogger.js');
+
+// Create a global debug logger
+dl = new DbgLogger('e');
+dl.log('d', '/bin/www+ via d.log d');
+dl.logd('/bin/www+ via d.logd');
+dl.log('e', '/bin/www+ via d.loge');
+dl.loge('/bin/www+ via d.log e');
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
